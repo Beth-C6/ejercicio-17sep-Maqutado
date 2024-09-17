@@ -1,0 +1,109 @@
+.contenedor 
+{
+    background-color: rgb(8, 79, 100);
+    padding: 10px;
+    font-size: 30px;
+    display: grid;
+    grid-gap: 10px;
+    text-align: center;
+   
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 2fr 1fr 10fr 1fr;
+    grid-template-areas:    "cabecera   cabecera    cabecera"
+                            "menu       menu        menu"
+                            "contenido  contenido    publi"
+                            "pag        pag         pag";
+
+}
+.contenedor>div
+{
+    background-color: rgb(80, 178, 182);
+}
+.contenedor .cabecera
+{
+    background-color: rgb(80, 178, 182);
+    grid-column: cabecera;
+}
+.contenedor .menu
+{
+    background-color: rgb(80, 178, 182);
+    grid-column: menu;
+}
+.contenedor .contenido
+{
+    background-color: rgb(80, 178, 182);
+    grid-column: contenido;
+    padding: 10px;
+    font-size: 30px;
+    display: grid;
+    grid-gap: 10px;
+    text-align: center;
+
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 2fr 6fr;
+    grid-template-areas: "cont  cont    cont    cont "
+                        "text1  text1   text2   text2";
+}
+.contenido>div
+{
+    background-color: blue;
+}
+.contenido .cont
+{
+    background-color: rgb(56, 158, 124);
+    grid-column: cont;
+}
+.contenido .text1
+{
+    background-color: rgb(56, 158, 124);
+    grid-column: text1;
+}
+.contenido .text2
+{
+    background-color: rgb(56, 158, 124);
+    grid-column: text2;
+}
+
+
+.contenedor .publi
+{
+    background-color: rgb(80, 178, 182);
+    grid-column: publi;
+    padding: 10px;
+    font-size: 30px;
+    display: grid;
+    grid-gap: 10px;
+    text-align: center;
+
+    grid-template-columns: 1fr ;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas:    "a1"
+                            "a2"
+                            "a3";
+}
+.publi>div
+{
+    background-color: blue;
+}
+.publi .a1
+{
+    background-color: rgb(56, 158, 124);
+    grid-column: a1;
+}
+.publi .a2
+{
+    background-color: rgb(56, 158, 124);
+    grid-column: a2;
+}
+.publi .a3
+{
+    background-color: rgb(56, 158, 124);
+    grid-column: a3;
+}
+
+.contenedor .pag
+{
+    background-color: rgb(80, 178, 182);
+    grid-column: pag;
+    text-align: end;
+}
